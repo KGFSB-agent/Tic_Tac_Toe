@@ -8,9 +8,9 @@ export class Cell extends React.Component{
             0: '',
             1: '×',
             2: '○'
-        }
+        };
         return (
-            <div className="cell">
+            <div onClick={this.props.turnFunction} className="cell">
                 <div className="inside">
                     {values[this.props.value]}
                 </div>
@@ -18,5 +18,3 @@ export class Cell extends React.Component{
         )
     }
 }
-
-
